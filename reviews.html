@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aroma Malaya — Customer Reviews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand: #5c3317;       /* coklat gelap */
+      --brand-hover: #a0522d; /* coklat terang */
+      --text: #1F2937;
+      --muted: #6B7280;
+      --bg: #f5deb3; /* light brown background */
+      --card: #FFFFFF;
+      --line: #E5E7EB;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter, sans-serif}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    /* Header */
+    .site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line)}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:8px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--brand)}
+    .brand-logo{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg, var(--brand), var(--brand-hover));display:grid;place-items:center;color:#fff;font-weight:700}
+
+    /* Navbar buttons */
+    .menu{display:flex;flex-wrap:wrap;gap:10px}
+    .menu a{
+      color:#ffffff;
+      font-weight:bold;
+      background-color:var(--brand);
+      padding:8px 14px;
+      border-radius:5px;
+      transition:background-color 0.3s ease;
+    }
+    .menu a:hover,
+    .menu a.active{background-color:var(--brand-hover)}
+
+    /* Hero */
+    .hero{border-bottom:1px solid var(--line)}
+    .hero-inner{display:grid;grid-template-columns:1fr;gap:32px;align-items:center;padding:64px 0;text-align:center}
+    .hero h1{font-family:"Playfair Display", serif;font-size:42px;margin:0 0 12px;color:#8a5a00}
+    .hero p{font-size:18px;margin:0 0 20px;color:#8a5a00}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.2);color:#8a5a00;border:none;border-radius:999px;padding:8px 14px;font-weight:600}
+
+    /* Reviews Section */
+    section{padding:56px 0}
+    .reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px}
+    .review-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:transform 0.3s ease}
+    .review-card:hover{transform:translateY(-5px)}
+    .review-card h3{margin:0;color:var(--brand);font-size:20px}
+    .stars{color:#F59E0B;margin:5px 0;font-size:18px}
+    .review-text{font-size:15px;color:var(--text);margin-top:10px}
+
+    /* Footer */
+    .site-footer{background:#fff;border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center}
+
+    @media (max-width:560px){
+      .hero h1{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-logo">AM</div>
+        <span>Aroma Malaya</span>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="mission.html">Mission & Vision</a>
+        <a href="staff.html">Staff Members</a>
+        <a href="menu.html">Menu</a>
+        <a href="food.html">Food Menu</a>
+        <a href="beverages.html">Beverages Menu</a>
+        <a href="desserts.html">Desserts Menu</a>
+        <a href="promotion.html">Promotion / Offers</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html" class="active">Customer Review</a>
+        <a href="faq.html">FAQ</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="contact.html">Contact</a>
+        <a href="group.html">Group</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="background-color:#fdf6e3;">
+    <div class="container hero-inner">
+      <div>
+        <span class="badge">Voices • Trust • Experience</span>
+        <h1>Customer Reviews</h1>
+        <p>Hear what our guests have to say about their Aroma Malaya experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section>
+    <div class="container reviews">
+      <div class="review-card">
+        <h3>Nurul</h3>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">The Nasi Lemak here is the best I’ve ever tasted! Authentic flavors and cozy atmosphere.</p>
+      </div>
+      <div class="review-card">
+        <h3>Daniel</h3>
+        <div class="stars">★★★★☆</div>
+        <p class="review-text">Satay was delicious and the staff were very friendly. Will definitely come back again.</p>
+      </div>
+      <div class="review-card">
+        <h3>Siti Aisyah</h3>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">I love the Teh Tarik! It reminds me of my childhood. Highly recommend Aroma Malaya.</p>
+      </div>
+      <div class="review-card">
+        <h3>James</h3>
+        <div class="stars">★★★★☆</div>
+        <p class="review-text">Great ambiance and tasty Laksa. Perfect spot for family dinners.</p>
+      </div>
+      <div class="review-card">
+        <h3>Mei Ling</h3>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Cendol was refreshing and the desserts are beautifully presented. Truly a Malaysian gem!</p>
+      </div>
+      <div class="review-card">
+        <h3>Arif</h3>
+        <div class="stars">★★★★☆</div>
+        <p class="review-text">The Char Kway Teow was flavorful and authentic. Service was quick and attentive.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Aroma Malaya. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

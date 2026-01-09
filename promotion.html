@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promotions | Aroma Malaya</title>
+  <style>
+    :root{
+      --brand: #5c3317;       /* coklat gelap */
+      --brand-hover: #a0522d; /* coklat terang */
+      --bg: #f5deb3;          /* light brown background */
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: var(--brand);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Navbar */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      background: #fff;
+      border-bottom: 2px solid var(--brand-hover);
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      font-weight: bold;
+      background-color: var(--brand);
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a.active {
+      background-color: var(--brand-hover);
+    }
+
+    .promotions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .promo-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .promo-card:hover {
+      transform: translateY(-5px);
+    }
+    .promo-card h3 {
+      color: var(--brand);
+      margin-bottom: 10px;
+    }
+    .promo-card p {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .promo-card .offer {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--brand-hover);
+      margin-bottom: 10px;
+    }
+    .promo-card button {
+      padding: 10px 15px;
+      background: var(--brand);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .promo-card button:hover {
+      background: var(--brand-hover);
+    }
+    footer {
+      background: var(--brand);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Restaurant Aroma Malaya</h1>
+    <p>Promotions & Special Offers</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="mission.html">Mission & Vision</a>
+    <a href="staff.html">Staff Members</a>
+    <a href="menu.html">Menu</a>
+    <a href="food.html">Food Menu</a>
+    <a href="beverages.html">Beverages Menu</a>
+    <a href="desserts.html">Desserts Menu</a>
+    <a href="promotion.html" class="active">Promotion / Offers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="reviews.html">Customer Review</a>
+    <a href="faq.html">FAQ</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="contact.html">Contact</a>
+    <a href="group.html">Group</a>
+  </nav>
+
+  <section class="promotions">
+    <div class="promo-card">
+      <h3>Weekend Special</h3>
+      <p>Enjoy our famous Nasi Lemak with Teh Tarik combo.</p>
+      <div class="offer">RM15 Only</div>
+      <button>Order Now</button>
+    </div>
+    <div class="promo-card">
+      <h3>Family Feast</h3>
+      <p>Satay platter + Laksa + Dessert for 4 people.</p>
+      <div class="offer">20% Off</div>
+      <button>Reserve Table</button>
+    </div>
+    <div class="promo-card">
+      <h3>Happy Hour</h3>
+      <p>Buy 1 Teh Tarik, Get 1 Free (3–6 PM daily).</p>
+      <div class="offer">Limited Time</div>
+      <button>Visit Us</button>
+    </div>
+    <div class="promo-card">
+      <h3>Student Discount</h3>
+      <p>Show your student card and get 10% off all meals.</p>
+      <div class="offer">Save 10%</div>
+      <button>Claim Offer</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Aroma Malaya. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

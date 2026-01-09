@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aroma Malaya — Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5deb3;
+    }
+
+    /* ===== BANNER ===== */
+    #banner {
+      width: 100%;
+      height: 100vh;
+      background-image: url('banner.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #banner h1 {
+      font-size: 2.5em;
+      color: #fff;
+      background: rgba(0,0,0,0.5);
+      padding: 14px 28px;
+      border-radius: 10px;
+      animation: floatText 4s infinite ease-in-out;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    @keyframes floatText {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* ===== NAVBAR ===== */
+    #navbar {
+      background-color: #8b4513;
+    }
+
+    #navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #navbar li {
+      margin: 5px;
+    }
+
+    #navbar a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: #5c3317;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    #navbar a:hover {
+      background-color: #a0522d;
+    }
+
+    /* ===== CONTENT ===== */
+    #welcome {
+      padding: 25px;
+      text-align: center;
+      font-size: 1.2em;
+      color: #333333;
+      background-color: #fffaf0;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* ===== FOOTER ===== */
+    #footer {
+      background-color: #deb887;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #333333;
+      border-top: 3px solid #a0522d;
+    }
+
+    #footer em {
+      color: #5c3317;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== BANNER ===== -->
+  <div id="banner">
+    <h1>More Than Food, It's Malaya</h1>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <div id="navbar">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="mission.html">Mission & Vision</a></li>
+      <li><a href="staff.html">Staff Members</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="food.html">Food Menu</a></li>
+      <li><a href="beverages.html">Beverages Menu</a></li>
+      <li><a href="desserts.html">Desserts Menu</a></li>
+      <li><a href="promotion.html">Promotion / Offers</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reviews.html">Customer Review</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+      <li><a href="group.html">Group</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== CONTENT ===== -->
+  <div id="welcome">
+    <p>
+      Welcome to <strong>Aroma Malaya</strong>, where tradition meets taste.<br />
+      Explore our menu, meet our team, and enjoy the essence of Malaya.
+    </p>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div id="footer">
+    <p>
+      &copy; 2026 Aroma Malaya | Best viewed in Chrome |
+      Resolution: 1920x1080 | Last updated: Jan 2026
+    </p>
+    <p>
+      <em>
+        Disclaimer: This website is for educational purposes only and not the official site of Aroma Malaya.
+      </em>
+    </p>
+  </div>
+
+</body>
+</html>

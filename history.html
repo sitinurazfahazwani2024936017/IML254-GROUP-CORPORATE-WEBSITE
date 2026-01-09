@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aroma Malaya — History</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand: #8b4513;
+      --brand-2: #d2b48c;
+      --text: #3b2f2f;
+      --muted: #6b4f3f;
+      --bg: #f3e6d8;       /* LIGHT BROWN */
+      --card: #fffaf5;
+      --line: #e0cfc2;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter, sans-serif;
+    }
+
+    img{max-width:100%;display:block}
+
+    /* ===== HEADER ===== */
+    .site-header{
+      background:#fffaf5;
+      border-bottom:1px solid var(--line);
+    }
+
+    .container{
+      max-width:1200px;
+      margin:0 auto;
+      padding:0 20px;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px 0;
+      flex-wrap:wrap;
+      gap:15px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+      color:var(--brand);
+    }
+
+    .brand-logo{
+      width:38px;
+      height:38px;
+      border-radius:10px;
+      background:linear-gradient(135deg, var(--brand), var(--brand-2));
+      display:grid;
+      place-items:center;
+      color:#fff;
+      font-weight:800;
+    }
+
+    /* ===== NAV BUTTONS ===== */
+    .menu{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
+    .menu a{
+      padding:8px 14px;
+      border-radius:20px;
+      background:#f5e3cf;
+      color:#5c3b23;
+      font-weight:600;
+      font-size:14px;
+      transition:all .25s ease;
+    }
+
+    .menu a:hover{
+      background:#8b4513;
+      color:#fff;
+    }
+
+    .menu a.active{
+      background:#8b4513;
+      color:#fff;
+    }
+
+    /* ===== HERO ===== */
+    .hero{
+      background:#fffaf5;
+      border-bottom:1px solid var(--line);
+    }
+
+    .hero-inner{
+      display:grid;
+      grid-template-columns:1.2fr 1fr;
+      gap:32px;
+      padding:60px 0;
+      align-items:center;
+    }
+
+    .badge{
+      display:inline-block;
+      background:#f3e6d8;
+      padding:8px 16px;
+      border-radius:999px;
+      font-weight:600;
+      margin-bottom:12px;
+    }
+
+    .hero h1{
+      font-family:"Playfair Display", serif;
+      font-size:42px;
+      margin:0 0 12px;
+    }
+
+    .hero p{
+      color:var(--muted);
+      font-size:18px;
+    }
+
+    .hero-card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,.15);
+    }
+
+    .hero-card .caption{
+      padding:12px;
+      font-size:14px;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+    }
+
+    /* ===== SECTIONS ===== */
+    section{padding:56px 0}
+
+    .section-title{
+      font-family:"Playfair Display", serif;
+      font-size:28px;
+      margin-bottom:8px;
+    }
+
+    .section-sub{
+      color:var(--muted);
+      margin-bottom:26px;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:22px;
+      box-shadow:0 6px 14px rgba(0,0,0,.1);
+    }
+
+    /* ===== TIMELINE ===== */
+    .timeline{
+      border-left:3px solid var(--line);
+      padding-left:22px;
+    }
+
+    .tl-item{
+      margin-bottom:24px;
+      position:relative;
+    }
+
+    .tl-item::before{
+      content:"";
+      position:absolute;
+      left:-32px;
+      top:4px;
+      width:14px;
+      height:14px;
+      background:var(--brand);
+      border-radius:50%;
+    }
+
+    .tl-year{
+      font-weight:800;
+      color:var(--brand);
+    }
+
+    .tl-title{
+      font-weight:700;
+      margin:4px 0;
+    }
+
+    .tl-text{
+      color:var(--muted);
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer{
+      background:#e6d3b1;
+      text-align:center;
+      padding:20px;
+      color:#4b2e1e;
+      font-size:14px;
+    }
+
+    @media(max-width:900px){
+      .hero-inner,.grid-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <div class="brand">
+      <div class="brand-logo">AM</div>
+      <span>Aroma Malaya</span>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="history.html" class="active">History</a>
+      <a href="mission.html">Mission & Vision</a>
+      <a href="staff.html">Staff Members</a>
+      <a href="menu.html">Menu</a>
+      <a href="food.html">Food Menu</a>
+      <a href="beverages.html">Beverages Menu</a>
+      <a href="desserts.html">Desserts Menu</a>
+      <a href="promotion.html">Promotion</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Review</a>
+      <a href="faq.html">FAQ</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="contact.html">Contacts</a>
+      <a href="group.html">Group</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="badge">Since 1998 • Heritage of Flavor</span>
+      <h1>Our Story</h1>
+      <p>
+        From a humble Malaya kitchen to a growing chain of restaurants,
+        Aroma Malaya preserves authentic spices and time-honored recipes.
+      </p>
+    </div>
+    <div class="hero-card">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Restaurant">
+      <div class="caption">A warm atmosphere blending tradition and modern comfort.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+<section>
+  <div class="container">
+    <h2 class="section-title">Roots & Journey</h2>
+    <p class="section-sub">
+      Starting as a small family-owned eatery, Aroma Malaya grew with a focus on
+      fresh ingredients, authentic recipes, and heartfelt hospitality.
+    </p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Family Origins</h3>
+        <p>
+          Founded by a couple inspired by their grandmother’s recipes from Kedah
+          and Melaka—blending northern and southern influences into a unique
+          identity.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Philosophy of Taste</h3>
+        <p>
+          Slow-roasted spices, fresh coconut milk, and sambal cooked to perfection—
+          every dish preserves traditional techniques with care.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <h2 class="section-title">Timeline</h2>
+    <p class="section-sub">Milestones that shaped Aroma Malaya.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">1998</div>
+        <div class="tl-title">First Outlet</div>
+        <div class="tl-text">Small family restaurant in Kampung Baru.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">2005</div>
+        <div class="tl-title">Central Kitchen</div>
+        <div class="tl-text">Standardized recipes and trained staff.</div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">2015</div>
+        <div class="tl-title">Nationwide Expansion</div>
+        <div class="tl-text">Branches across major Malaysian cities.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  © 2026 Aroma Malaya | For Academic Purpose Only
+</footer>
+
+</body>
+</html>
